@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: black;
+            margin-bottom: 5px;
+        }
+
+        .logo_header{
+            margin-left: 3%;
+            width: 25%;
+        }
+
+        li{
+            float: left;
+            list-style: none;
+            padding: 12px;
+            color: white;
+        }
+
+        nav{
+            float: right;
+            margin-top: 30px;
+            margin-right: 5%;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        li:hover a{
+            color: rgb(247, 203, 152);
+        }
+
+        h2, form{
+            margin-left: 20px;
+        }
+
+
+        /* CSS formulario */
+        fieldset{
+            margin-left: 5px;
+            margin-top: 10px;
+            background-color: rgb(238, 238, 238);
+            margin-bottom: 10px;
+        }
+
+        
+        
+        /* CSS pie de página */
+        .pie {
+            background-color: black;
+            height: 150px;
+            clear: both;
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        .RRSS {
+            float: left;
+            width: 2%;
+            align-content: left;
+            padding: 5px;
+        }
+
+        .avisos {
+            text-align: center;
+            float:none;
+        }
+
+        .boton_masinfo {
+            align-items: left;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            float:right;
+        }
+
+        /* CSS responsive */
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="Home.html"><img class="logo_header" src="img\DAM abogados pequeño.jpg" alt="Logo DAM abogados"/>
+
+        <nav>
+            <ul>
+                <li><a href="">Quienes somos</a></li>
+                <li><a href="Áreas de actuación.html">Áreas de actuación</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Publicaciones</a></li>
+                <li><a href="">Localización</a></li>
+                <li><a href="Formulario.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+   
+   
+    <form action="procesarPeticion.jsp" method="get">
+
+        <h2>Formulario de Contacto</h2>
+        <fieldset>
+            <br />
+            <label for="nombre">Nombre*: </label>
+            <input id="nombre" type="text" name="nombre" required autofocus/>
+            <br />
+
+            <label for="apellidos">Apellidos*: </label>
+            <input id="apellidos" type="text" name="apellidos" required/>
+            <br />
+
+            <label for="email">Email*: </label>
+            <input id="email" type="email" name="email" required/>
+            <br />
+
+            <label for="telefono">Teléfono de contacto*: </label>
+            <input id="telefono" type="tel" name="telefono" required/>
+            <br />
+            
+            <br/>
+            <label for="dpto">Departamento: </label>
+            <br />	
+            <input type="checkbox" name="depto" value="M" />Derecho Mercantil<br />	
+            <input type="checkbox" name="depto" value="L" />Derecho Laboral<br />	
+            <input type="checkbox" name="depto" value="P" />Derecho Penal<br />	
+            <input type="checkbox" name="depto" value="C" />Derecho Civil<br />	
+            <input type="checkbox" name="depto" value="T" />Derecho Tributario<br />	
+            <input type="checkbox" name="depto" value="O" checked/>Otros<br />	
+
+        
+            <br/>
+            <label for="oficina">Contacto con oficina: </label>
+            <br />	
+            <input type="radio" name="oficina" value="M" />Madrid<br />	
+            <input type="radio" name="oficina" value="B" />Barcelona<br />	
+            <input type="radio" name="oficina" value="V" />Valencia<br />	
+            <input type="radio" name="oficina" value="SC" />Servicios centrales<br />	
+            <br/>
+            
+            <label for="respuesta">Escoja su forma preferida de respuesta: </label>
+            <select name="respuesta">
+                <option value="EMAIL" selected>Email</option>
+                <option value="TEL">Teléfono</option>
+                <option value="CITA" >Cita previa</option>
+            </select>
+            <br />
+
+            <p>En caso de cita previa, elija día preferido</p>
+            <input type="date"></label>
+            <br />
+
+            
+            <br/>
+            <label for="observaciones">Observaciones: </label>
+            <br />	
+            <textarea rows="5" cols="80" name="observaciones" placeholder="Escriba aquí"></textarea>
+            <br/>
+            
+            <br/>	
+            He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" required/>
+            <br/>
+            <br/>	
+            Acepto recibir comunicaciones comerciales <input type="checkbox" name="terminos" value="Y" />
+            <br/>
+
+            <br/>	
+            <input type="submit" value="Enviar datos" />
+            
+            <input type="reset" value="Limpiar formulario" />
+
+        </fieldset>
+    </form>
+
+    <footer class="pie">
+        <p>Para más información</p>
+        <br/>
+        <a href="https://es-es.facebook.com/"><img class="RRSS" src="icon\FB.png" alt="DAM abogados - Facebook"/>
+        <a href="https://www.instagram.com/"><img class="RRSS" src="icon\Instagram.png" alt="DAM abogados - Instagram"/>
+        <a href="https://twitter.com/"><img class="RRSS" src="icon\Twitter.png" alt="DAM abogados - Twitter"/>
+        <a href="https://es.linkedin.com/"><img class="RRSS" src="icon\LinkedIn.png" alt="DAM abogados - LinkedIn"/>
+        
+        
+        <ul>
+            <li><a class="avisos" href="">Aviso legal</a></li>
+            <li><a class="avisos" href="">Política de privacidad</a></li>
+            <li><a class="avisos" href="">Política de cookies</a></li>
+        </ul>
+
+        <br/>
+        <br/>
+        <p class="copyright">Todos los derechos reservados copyright 2021 &copy;</p>
+    </footer>
+
+
+</body>
+</html>

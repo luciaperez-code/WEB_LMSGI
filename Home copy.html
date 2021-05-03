@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Lucía</title>
+
+        <style> 
+            /**
+            * {
+                padding: 0px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            **/
+            /* CSS */
+            main {
+                border: 1px solid #CCC;
+                padding: 5px;
+                width: 960px;
+                margin: 20px auto;
+                background-color: #a442e6;
+            }
+    
+            header {
+                height: 150px;
+                background-color: #85b4e9;
+                border: 1px solid #CCC;
+            }
+    
+            nav {
+                height: 90px;
+                border: 1px solid rgb(199, 79, 79);
+                background-color: rosybrown;
+            }
+    
+            section {
+                border: 1px solid #CCC;
+                width: 75%;
+                float: left;
+                background-color:#000333;
+                color: #fff;
+            }
+
+            article {
+                font-size: medium;
+            }
+    
+            aside {
+                width: 24%;
+                height: 200px;
+                float: right;
+                background-color:#2b8165;
+                color: #fff;
+            }
+    
+            footer {
+                border: 1px solid #CCC;
+                clear: both;
+            }
+    
+            header, nav, section, aside {
+                margin-bottom: 5px;
+            }
+    
+            main, header, nav, section, aside, footer {
+                border: solid 1px #ccc;
+            }
+
+            .cabecera_web{
+                background-color: aqua;
+            }
+
+            .menu_naveg{
+                text-align: center;
+                display: inline-block;
+                background-color: aquamarine;                
+                /**float:left;**/
+                padding: 20px;
+                width: 11%;
+            }
+
+            
+        /* CSS RESPONSIVO */
+        @media screen and (max-width: 1300px) {
+            main {
+                width: 94%;
+            }
+            section {
+                width: 65%;
+            }
+            aside {
+                width: 30%;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            /* 
+            Con width auto se tiene en cuenta el padding y el margen a la hora de calcular
+            el ancho que ocupara un elemento.
+
+            Con width 100% no se tendra en cuenta, por lo que primero ocupará todo el ancho 
+            de la pagina y luego le sumara el padding y el margen, saliendose de los limites
+
+            https://blogs.ua.es/pi/2012/12/07/la-diferencia-entre-widthauto-y-width100/            
+            */
+             section {
+                width: auto;
+                float: none;
+            }
+            aside {
+                width: auto;
+                float: none;
+            }
+        }
+
+        /**moviles**/
+        @media screen and (max-width: 480px) {
+            header {
+                height: auto;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            aside {
+                display: none;
+            }
+            section {
+                width: 100%;
+            }
+        }
+
+            
+
+        </style>
+
+    </head>
+
+    <body>
+        <header class="cabecera_web">Hola</header>
+        <!---->
+        <nav>
+            <p class="menu_naveg">Home</p> 
+            <p class="menu_naveg">Noticias</p>
+            <p class="menu_naveg">Quiénes somos</p>
+            <p class="menu_naveg">Publicaciones</p>
+            <p class="menu_naveg">Áreas de actuación</p>
+            <p class="menu_naveg">Localización</p>
+            <p class="menu_naveg">Contacto</p>
+        </nav>
+        <section>
+            <header>Cabecera de mi seccion</header>
+            <article>La noticia tuvo lugar hace dos noches en Madrid</article>
+            <footer>Leer más</footer>
+        </section>
+
+        <aside>Articulos relacionados</aside>
+
+        <footer>Para más información</footer>
+    </body>
+</html>
