@@ -46,7 +46,7 @@
         /* CSS menu */
 
   .mainmenubtn {
-    background-color: skyblue;
+    background-color: black;
     color: white;
     border: none;
     cursor: pointer;
@@ -54,7 +54,7 @@
     margin-top:20px;
 }
 .mainmenubtn:hover {
-    background-color: blue;<li class=" odd">
+    background-color: black;<li class=" odd">
     }
 .dropdown {
     position: relative;
@@ -63,20 +63,20 @@
 
 .dropdown-child {
     display: none;
-    background-color: grey;
+    background-color: black;
     min-width: 40px;
     position: center;
 }
 
 .dropdown-child a {
-    color: blue;
+    color: white;
     padding: 10px;
     text-decoration: none;
-    display: inline;
+    display: block;
 }
     
 .dropdown:hover .dropdown-child {
-    display: inline;
+    display: block;
 }
         
         /* CSS cuerpo de la página */
