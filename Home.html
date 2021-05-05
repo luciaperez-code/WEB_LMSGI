@@ -1,200 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <style>
+    <!-- Referencias a hojas de estilos para separar ordenadores (primer link) de ipads e iPhones (otros dos link) -->
+    <link rel="stylesheet" href="home.css" media="screen and not(-webkit-min-device-pixel-ratio: 2) and not(-webkit-min-device-pixel-ratio: 3)">
+    <link rel="stylesheet" href="apple.css" media="screen and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="stylesheet" href="apple.css" media="screen and (-webkit-min-device-pixel-ratio: 3)">
+     
 
-        /* CSS */
-        
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-        }
-
-        /* CSS cabecera */
-        .cabecera {
-            background-color: black;
-            margin-bottom: 5px;
-        }
-
-        .logo_header{
-            margin-left: 3%;
-            width: 25%;
-        }
-
-        li{
-            float: left;
-            list-style: none;
-            padding: 12px;
-            }
-
-        nav{
-            float: right;
-            margin-top: 30px;
-            margin-right: 5%;
-            color: white;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
-        }
-
-        li:hover a{
-            color: rgb(247, 203, 152);
-        }
-        
-        /* CSS cuerpo de la página */
-        section {
-            border: 1px solid #CCC;
-            width: 75%;
-            float: left;
-            color: #000;
-            background-color: rgb(238, 238, 238);
-            margin-bottom: 5px;
-            text-indent: 10px;
-            
-        }
-
-        article {
-            font-size: medium;
-        }
-    
-        aside {
-            width: 24%;
-            height: 200px;
-            float: right;
-            background-color:#2b8165;
-            color: #fff;
-        }
-        
-        .article {
-            color: black;
-        }
-
-        .article_header {
-            color: black;
-            margin-top: 50px;
-        }
-        
-        /* CSS pie de página */
-        .pie {
-            background-color: black;
-            height: 150px;
-            clear: both;
-            color: white;
-        }
-
-        .copyright {
-            text-align: center;
-        }
-
-        .RRSS {
-            float: right;
-            width: 2%;
-            align-content: left;
-            padding: 5px;
-        }
-
-        .avisos {
-            text-align: center;
-            float:none;
-        }
-
-        .boton_masinfo {
-            align-items: left;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            float:right;
-        }
-        
-
-
-         
-        /* CSS RESPONSIVO */
-        @media screen and (max-width: 1300px) {
-            main {
-                width: 94%;
-            }
-            section {
-                width: 65%;
-            }
-            aside {
-                width: 30%;
-            }
-        }
-
-        @media screen and (max-width: 900px) {
-            /* 
-            Con width auto se tiene en cuenta el padding y el margen a la hora de calcular
-            el ancho que ocupara un elemento.
-
-            Con width 100% no se tendra en cuenta, por lo que primero ocupará todo el ancho 
-            de la pagina y luego le sumara el padding y el margen, saliendose de los limites
-
-            https://blogs.ua.es/pi/2012/12/07/la-diferencia-entre-widthauto-y-width100/            
-            */
-           /** nav{
-                m
-            }
-
-            section {
-                width: auto;
-                float: none;
-            }
-            aside {
-                width: auto;
-                float: none;
-            }
-            **/
-        }
-
-        /**moviles**/
-        @media screen and (max-width: 480px) {
-            header {
-                height: auto;
-            }
-            nav {
-                height: auto;
-                display: none;
-               		
-            }
-            
-
-            h1 {
-                font-size: 24px;
-            }
-            aside {
-                display: none;
-            }
-            section {
-                width: 100%;
-            }
-        }
-
-    </style>
-
+       
 </head>
 <body>
     <header class="cabecera">
         <a href="Home.html"><img class="logo_header" src="img\DAM abogados pequeño.jpg" alt="Logo DAM abogados"/>
-        <nav>
-            <ul>
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="Áreas de actuación.html">Áreas de actuación</a></li>
-                <li><a href="">Noticias</a></li>
-                <li><a href="">Publicaciones</a></li>
-                <li><a href="">Localización</a></li>
-                <li><a href="Formulario.html">Contacto</a></li>
-            </ul>
+<nav>   
+<div class="dropdown">
+  <button class="mainmenubtn">Menu</button>
+  <div class="dropdown-child">
+    <a href="Home.html">Quienes somos</a>
+    <a href="Áreas de actuación.html">Areas de actuacion</a>
+    <a href="Noticias.html">Noticas</a>
+    <a href="Publicaciones.html">Publicaciones</a>
+    <a href="Localizacion.html">Localizacion</a>
+    <a href="Formulario.html">Contacto</a>
+   </div>
 
-        </nav>
+  </div>
+  </nav> 
     </header>
 
     <section>
@@ -214,7 +50,7 @@
                 
     </section>
 
-    <aside>Articulos relacionados</aside>
+    <aside><p>Articulos relacionados</p></aside>
 
     <footer class="pie">
         <p>Para más información</p>

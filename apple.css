@@ -1,0 +1,494 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+  header {
+    background-color: black;
+}
+
+
+/* 
+    Referencias medias:
+    https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+    la coma actua como una operación or
+*/
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* ----------- iPad Pro 10.5" ----------- */
+/* ----------- iPad Pro 12.9" ----------- */
+@media only screen 
+  and (min-device-width: 768px) and (max-device-width: 1024px) 
+  and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+  , only screen 
+  and (min-device-width: 834px) and (max-device-width: 834px) 
+  and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+  , only screen 
+  and (min-device-width: 1024px) and (max-device-width: 1024px) 
+  and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+        header, section, aside, .pie {
+          display:inline-block;
+          position: relative;
+          width: 100%;        
+      }
+  
+      .logo_header{
+          width: 100%;
+      }
+  
+  
+      section {
+          border: 1px solid #CCC;
+          color: #000;
+          background-color: rgb(238, 238, 238);
+          margin-bottom: 5px;
+          text-indent: 10px;
+          
+      }
+      aside {
+          height: 100px;
+          background-color:mediumseagreen;
+          color: #fff;
+      }
+      .pie {
+          background-color: grey;
+          color: white;
+      }
+  
+      .pie > p {
+          text-align: center;
+      }
+      .pie li {
+          margin-top:  10px;
+          list-style: none;
+          text-align: center;
+      }
+      .copyright, .pie p  {
+          text-align: center;
+      }
+  
+      .RRSS {
+          float: right;
+          width: 20%;
+          align-content: left;
+          padding: 5px;
+          margin-right: 2%;
+      }
+  
+      .avisos {
+          text-align: center;
+          float:none;
+      }
+  
+  .dropdown {
+      display: inline-block;
+      position: fixed;
+      right: 0px;
+      top: 0px;
+      width: 100px;
+      height: 100px;
+      z-index: 5;
+      background-color: slategray;
+      color:bisque;
+  }
+  .mainmenubtn{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+  }
+  .dropdown-child {
+      display: none;
+  }
+  .dropdown-child a{
+      display: inline-block;
+      width: 100px;
+      height: 1.2em;
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  .dropdown:hover {
+      width: 120px;
+      height: 12em;
+  }
+  .dropdown:hover .mainmenubtn{
+      display: none;
+  }
+  .dropdown:hover .dropdown-child {
+      display: inline-block;
+  }
+  .dropdown:hover .dropdown-child a:hover{
+      background-color: bisque;
+  }  
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* ----------- iPad Pro 10.5" ----------- */
+/* ----------- iPad Pro 12.9" ----------- */
+@media only screen 
+  and (min-device-width: 768px) and (max-device-width: 1024px) 
+  and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+  ,  only screen 
+  and (min-device-width: 1112px) and (max-device-width: 1112px) 
+  and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+  , only screen 
+  and (min-device-width: 1366px) and (max-device-width: 1366px) 
+  and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+    header, section, aside, .pie {
+        display:inline-block;
+        position: relative;
+        width: 100%;        
+    }
+
+    .logo_header{
+        width: 100%;
+    }
+
+
+    section {
+        border: 1px solid #CCC;
+        color: #000;
+        background-color: rgb(238, 238, 238);
+        margin-bottom: 5px;
+        text-indent: 10px;
+        
+    }
+    aside {
+        height: 100px;
+        background-color:mediumseagreen;
+        color: #fff;
+    }
+    .pie {
+        background-color: grey;
+        color: white;
+    }
+
+    .pie > p {
+        text-align: center;
+    }
+    .pie li {
+        margin-top:  10px;
+        list-style: none;
+        text-align: center;
+    }
+    .copyright, .pie p  {
+        text-align: center;
+    }
+
+    .RRSS {
+        float: right;
+        width: 20%;
+        align-content: left;
+        padding: 5px;
+        margin-right: 2%;
+    }
+
+    .avisos {
+        text-align: center;
+        float:none;
+    }
+
+.dropdown {
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    background-color: slategray;
+    color:bisque;
+}
+.mainmenubtn{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.dropdown-child {
+    display: none;
+}
+.dropdown-child a{
+    display: inline-block;
+    width: 100px;
+    height: 1.2em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown:hover {
+    width: 120px;
+    height: 12em;
+}
+.dropdown:hover .mainmenubtn{
+    display: none;
+}
+.dropdown:hover .dropdown-child {
+    display: inline-block;
+}
+.dropdown:hover .dropdown-child a:hover{
+    background-color: bisque;
+}  
+
+
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)
+  , only screen 
+  and (min-device-width: 414px) and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait)
+  , only screen 
+  and (min-device-width: 375px) and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { 
+    header, section, aside, .pie {
+        display:inline-block;
+        position: relative;
+        width: 100%;        
+    }
+
+    .logo_header{
+        width: 100%;
+    }
+
+
+    section {
+        border: 1px solid #CCC;
+        color: #000;
+        background-color: rgb(238, 238, 238);
+        margin-bottom: 5px;
+        text-indent: 10px;
+        
+    }
+    aside {
+        height: 100px;
+        background-color:mediumseagreen;
+        color: #fff;
+    }
+    .pie {
+        background-color: grey;
+        color: white;
+    }
+
+    .pie > p {
+        text-align: center;
+    }
+    .pie li {
+        margin-top:  10px;
+        list-style: none;
+        text-align: center;
+    }
+    .copyright, .pie p  {
+        text-align: center;
+    }
+
+    .RRSS {
+        float: right;
+        width: 20%;
+        align-content: left;
+        padding: 5px;
+        margin-right: 2%;
+    }
+
+    .avisos {
+        text-align: center;
+        float:none;
+    }
+
+.dropdown {
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    background-color: slategray;
+    color:bisque;
+}
+.mainmenubtn{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.dropdown-child {
+    display: none;
+}
+.dropdown-child a{
+    display: inline-block;
+    width: 100px;
+    height: 1.2em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown:hover {
+    width: 120px;
+    height: 12em;
+}
+.dropdown:hover .mainmenubtn{
+    display: none;
+}
+.dropdown:hover .dropdown-child {
+    display: inline-block;
+}
+.dropdown:hover .dropdown-child a:hover{
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)
+  , only screen 
+  and (min-device-width: 414px) and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape)
+  , only screen 
+  and (min-device-width: 375px) and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { 
+    header, section, aside, .pie {
+        display:inline-block;
+        position: relative;
+        width: 100%;        
+    }
+
+    .logo_header{
+        width: 100%;
+    }
+
+
+    section {
+        border: 1px solid #CCC;
+        color: #000;
+        background-color: rgb(238, 238, 238);
+        margin-bottom: 5px;
+        text-indent: 10px;
+        
+    }
+    aside {
+        height: 100px;
+        background-color:mediumseagreen;
+        color: #fff;
+    }
+    .pie {
+        background-color: grey;
+        color: white;
+    }
+
+    .pie > p {
+        text-align: center;
+    }
+    .pie li {
+        margin-top:  10px;
+        list-style: none;
+        text-align: center;
+    }
+    .copyright, .pie p  {
+        text-align: center;
+    }
+
+    .RRSS {
+        float: right;
+        width: 20%;
+        align-content: left;
+        padding: 5px;
+        margin-right: 2%;
+    }
+
+    .avisos {
+        text-align: center;
+        float:none;
+        margin-top: 20px;;
+    }
+  
+  .dropdown {
+      display: inline-block;
+      position: fixed;
+      right: 0px;
+      top: 0px;
+      width: 100px;
+      height: 100px;
+      z-index: 5;
+      background-color: slategray;
+      color:bisque;
+  }
+  .mainmenubtn{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+  }
+  .dropdown-child {
+      display: none;
+  }
+  .dropdown-child a{
+      display: inline-block;
+      width: 100px;
+      height: 1.2em;
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  .dropdown:hover {
+      width: 120px;
+      height: 12em;
+  }
+  .dropdown:hover .mainmenubtn{
+      display: none;
+  }
+  .dropdown:hover .dropdown-child {
+      display: inline-block;
+  }
+  .dropdown:hover .dropdown-child a:hover{
+      background-color: bisque;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
