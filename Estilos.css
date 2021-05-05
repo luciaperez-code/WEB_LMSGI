@@ -170,23 +170,21 @@ footer {
 
 .imagen_derecha {
     float: right;
+    width: 35%;
 }
 
 .imagen_izquierda {
     float: left;
+    width: 35%;
 }
 
-.caja_texto{
+.caja_texto_areas{
     width: 100%;
     margin-bottom: 20px;
     background-color: rgb(214, 210, 210);
     height: 300px;
     color: black;
     padding-top: 10px;
-}
-
-.tamaño_imagen {
-    width: 35%;
 }
 
 
